@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 20px; margin: 0; background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
+        .container { max-width: 400px; margin: 0 auto; text-align: center; }
+        .weather-card { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); }
+        .temp { font-size: 4rem; font-weight: bold; margin: 20px 0; }
+        .location { font-size: 1.5rem; margin-bottom: 10px; }
+        .description { font-size: 1.2rem; opacity: 0.9; }
+        .details { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .detail-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1>Weather App</h1>
+            <div class="location">San Francisco, CA</div>
+            <div class="temp">72°F</div>
+            <div class="description">Partly Cloudy</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div>Humidity</div>
+                    <div><strong>65%</strong></div>
+                </div>
+                <div class="detail-item">
+                    <div>Wind Speed</div>
+                    <div><strong>12 mph</strong></div>
+                </div>
+                <div class="detail-item">
+                    <div>Feels Like</div>
+                    <div><strong>75°F</strong></div>
+                </div>
+                <div class="detail-item">
+                    <div>UV Index</div>
+                    <div><strong>6</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
